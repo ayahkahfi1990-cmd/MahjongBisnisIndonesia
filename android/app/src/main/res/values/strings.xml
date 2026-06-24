@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Bos Kaya Indonesia</string>
+    <string name="title_activity_main">Bos Kaya Indonesia</string>
+    <string name="package_name">com.boskaya.indonesia</string>
+    <string name="custom_url_scheme">com.boskaya.indonesia</string>
+</resources>

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<meta name="theme-color"
+content="#22c55e">
+
+<title>
+Bos Kaya Indonesia APK Ready
+</title>
+
+<link rel="manifest"
+href="manifest.json">
+
+<link rel="stylesheet"
+href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+<h1>
+💰 Bos Kaya Indonesia
+</h1>
+
+<p class="subtitle">
+Bangun kerajaan bisnis Indonesia
+</p>
+
+</header>
+
+<!-- Statistik -->
+
+<section class="stats">
+
+<div class="stat-card">
+
+<h3>💰 Koin</h3>
+
+<span id="coin">
+0
+</span>
+
+</div>
+
+<div class="stat-card">
+
+<h3>⭐ Level</h3>
+
+<span id="level">
+1
+</span>
+
+</div>
+
+<div class="stat-card">
+
+<h3>🏢 Usaha</h3>
+
+<span id="usaha">
+Gerobak Bakso
+</span>
+
+</div>
+
+<div class="stat-card">
+
+<h3>📈 Income</h3>
+
+<span id="income">
+1
+</span>
+
+/detik
+
+</div>
+
+</section>
+
+<!-- XP -->
+
+<section class="xp-section">
+
+<div class="xp-bar-bg">
+
+<div id="xpBar"
+class="xp-bar">
+
+</div>
+
+</div>
+
+<p>
+
+XP:
+
+<span id="xp">
+0
+</span>
+
+/
+
+<span id="xpMax">
+100
+</span>
+
+</p>
+
+</section>
+
+<!-- Tombol -->
+
+<section class="top-buttons">
+
+<button
+onclick="claimReward()">
+
+🎁 Hadiah Harian
+
+</button>
+
+<button
+onclick="spinLucky()">
+
+🎡 Lucky Spin
+
+</button>
+
+</section>
+
+<!-- Kartu Bisnis -->
+
+<section class="business-card">
+
+<img
+
+id="businessImage"
+
+src="assets/images/bakso.png"
+
+alt="Usaha"
+
+class="business-image"
+
+>
+
+<div class="business-info">
+
+<h2 id="businessName">
+
+Gerobak Bakso
+
+</h2>
+
+<p>
+
+Level Bisnis:
+
+<span id="businessLevel">
+
+1
+
+</span>
+
+</p>
+
+<p>
+
+Income:
+
+<span id="businessIncome">
+
+1
+
+</span>
+
+/detik
+
+</p>
+
+</div>
+
+</section>
+
+<!-- Kota -->
+
+<section class="city-box">
+
+<h2>
+
+🗺️ Kota Saat Ini
+
+</h2>
+
+<p id="cityName">
+
+Jakarta
+
+</p>
+
+</section>
+
+<!-- Mahjong -->
+
+<section>
+
+<h2 class="section-title">
+
+🀄 Mahjong Bisnis
+
+</h2>
+
+<div id="gameBoard"
+class="board">
+
+</div>
+
+</section>
+
+<!-- Upgrade -->
+
+<section class="upgrade-box">
+
+<h2>
+
+📈 Upgrade Usaha
+
+</h2>
+
+<button
+onclick="upgradeUsaha()">
+
+Upgrade Usaha
+
+</button>
+
+<p id="upgradeCost">
+
+Biaya:
+1000 Koin
+
+</p>
+
+</section>
+
+<!-- Misi -->
+
+<section class="mission-box">
+
+<h2>
+
+🎯 Misi Harian
+
+</h2>
+
+<ul id="missionList">
+
+<li>
+🔒 Kumpulkan 1000 Koin
+</li>
+
+<li>
+🔒 Match 10 Pasangan
+</li>
+
+<li>
+🔒 Upgrade Usaha 1x
+</li>
+
+</ul>
+
+</section>
+
+<!-- Achievement -->
+
+<section class="achievement-box">
+
+<h2>
+
+🏆 Achievement
+
+</h2>
+
+<ul id="achievementList">
+
+<li>
+🔒 Kumpulkan 5000 Koin
+</li>
+
+<li>
+🔒 Level 5
+</li>
+
+<li>
+🔒 Menjadi Konglomerat
+</li>
+
+</ul>
+
+</section>
+
+<!-- Rekor -->
+
+<section class="record-box">
+
+<h2>
+
+📊 Rekor
+
+</h2>
+
+<p>
+
+Rekor Koin:
+
+<span id="bestCoin">
+
+0
+
+</span>
+
+</p>
+
+<p>
+
+Rekor Level:
+
+<span id="bestLevel">
+
+1
+
+</span>
+
+</p>
+
+<p>
+
+Rekor Income:
+
+<span id="bestIncome">
+
+1
+
+</span>
+
+</p>
+
+</section>
+
+<!-- Kontrol -->
+
+<section class="control-box">
+
+<button
+onclick="resetGame()">
+
+🔄 Reset Game
+
+</button>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Bos Kaya Indonesia
+
+</p>
+
+</footer>
+
+</div>
+
+<!-- Audio -->
+
+<audio
+id="matchSound"
+src="assets/sounds/match.mp3">
+</audio>
+
+<audio
+id="coinSound"
+src="assets/sounds/coin.mp3">
+</audio>
+
+<audio
+id="upgradeSound"
+src="assets/sounds/upgrade.mp3">
+</audio>
+
+<audio
+id="spinSound"
+src="assets/sounds/spin.mp3">
+</audio>
+
+<audio
+id="winSound"
+src="assets/sounds/win.mp3">
+</audio>
+
+<script src="script.js">
+</script>
+
+<script>
+
+if(
+'serviceWorker'
+in navigator
+){
+
+navigator
+.serviceWorker
+.register(
+'service-worker.js'
+);
+
+}
+
+</script>
+
+</body>
+</html>
